@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",               // modern JS, widely supported
+    "module": "NodeNext",             // use modern Node.js modules
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",               // compiled output
+    "rootDir": "./src",               // source files
+    "declaration": true,              // generate .d.ts files
+    "declarationMap": true,
+    "sourceMap": true,
+
+    // Type Checking
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // For Node.js
+    "types": ["node"],                // include Node types
+    "lib": ["ES2020"],
+
+    // Performance
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}
