@@ -38,10 +38,4 @@ function main() {
     console.log("Multiplication: " + calculate(a, b, 'multiply'));
     console.log("Division: " + calculate(a, b, 'divide'));
 }
-
-main(); 
-console.log(calculate(4, 3, 'add'));
-console.log(calculate(5, 9, 'add'));
-console.log("subtract: " + calculate(10, 5, 'subtract'));
-console.log("multiply: " + calculate(4, 5, 'multiply'));
-console.log("divide: " + calculate(20, 4, 'divide'));
+main();
