@@ -28,6 +28,18 @@ function calculate(a, b, operation) {
             throw new Error("Invalid operation");
     }
 }
+
+function main() {
+    const a = 10;
+    const b = 5;
+
+    console.log("Addition: " + calculate(a, b, 'add'));
+    console.log("Subtraction: " + calculate(a, b, 'subtract'));
+    console.log("Multiplication: " + calculate(a, b, 'multiply'));
+    console.log("Division: " + calculate(a, b, 'divide'));
+}
+
+main(); 
 console.log(calculate(4, 3, 'add'));
 console.log(calculate(5, 9, 'add'));
 console.log("subtract: " + calculate(10, 5, 'subtract'));
