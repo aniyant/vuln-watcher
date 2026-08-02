@@ -14,8 +14,22 @@ function divide(a, b) {
     return a / b;
 }
 
-console.log(add(4, 3));
-console.log(add(5,9));
-console.log("subtract: " + subtract(10, 5));
-console.log("multiply: " + multiply(4, 5));
-console.log("divide: " + divide(20, 4));
+function calculate(a, b, operation) {
+    switch (operation) {
+        case 'add':
+            return add(a, b);
+        case 'subtract':
+            return subtract(a, b);
+        case 'multiply':
+            return multiply(a, b);
+        case 'divide':
+            return divide(a, b);
+        default:
+            throw new Error("Invalid operation");
+    }
+}
+console.log(calculate(4, 3, 'add'));
+console.log(calculate(5, 9, 'add'));
+console.log("subtract: " + calculate(10, 5, 'subtract'));
+console.log("multiply: " + calculate(4, 5, 'multiply'));
+console.log("divide: " + calculate(20, 4, 'divide'));
